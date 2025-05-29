@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Art & Design Fusion  Requirement Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #4A148C;
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+    }
+    .btn {
+      margin-top: 25px;
+      background-color: #4A148C;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #6a1b9a;
+    }
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 20px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Art & Design Fusion Requirement Form</h2>
+
+    <form>
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Company/Brand Name (if any):</label>
+      <input type="text" name="brand">
+
+      <label>WhatsApp Number:</label>
+      <input type="text" name="phone" required>
+
+      <label>Email ID:</label>
+      <input type="email" name="email">
+
+      <label>City & State:</label>
+      <input type="text" name="location">
+
+      <label>Preferred Contact Mode:</label>
+      <select name="contact_mode">
+        <option value="whatsapp">WhatsApp</option>
+        <option value="call">Call</option>
+        <option value="email">Email</option>
+      </select>
+
+      <label>Required Services:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="services" value="Logo Design"> Logo Design</label>
+        <label><input type="checkbox" name="services" value="Social Media Posts"> Social Media Post Design</label>
+        <label><input type="checkbox" name="services" value="Business Card"> Business Card</label>
+        <label><input type="checkbox" name="services" value="Brochure"> Brochure/Flyer</label>
+        <label><input type="checkbox" name="services" value="Invitation"> Invitation/Wedding Card</label>
+        <label><input type="checkbox" name="services" value="Packaging"> Packaging</label>
+        <label><input type="checkbox" name="services" value="3D Art"> 3D Art</label>
+        <label><input type="checkbox" name="services" value="Motion Graphics"> Motion Graphics</label>
+        <label><input type="checkbox" name="services" value="Live Printing"> Live Printing</label>
+        <label><input type="checkbox" name="services" value="Custom Painting"> Custom Artwork/Painting</label>
+        <label><input type="checkbox" name="services" value="NFT"> NFT Design & Minting</label>
+        <label><input type="checkbox" name="services" value="Web/App UI"> Web/App UI</label>
+        <label><input type="checkbox" name="services" value="Branding"> Branding Consultation</label>
+        <label><input type="checkbox" name="services" value="Others"> Others</label>
+      </div>
+
+      <label>Describe Your Idea / Vision:</label>
+      <textarea name="brief" rows="4" placeholder="Describe what you need..."></textarea>
+
+      <label>Color Preference or Style Guide:</label>
+      <input type="text" name="style" placeholder="e.g., Bold / Minimal / Vibrant">
+
+      <label>Deadline (DD/MM/YYYY):</label>
+      <input type="text" name="deadline">
+
+      <label>Budget Range (?):</label>
+      <input type="text" name="budget">
+
+      <label>Preferred Payment Mode:</label>
+      <select name="payment">
+        <option value="upi">UPI</option>
+        <option value="bank">Bank Transfer</option>
+        <option value="cash">Cash</option>
+        <option value="crypto">Crypto (for NFT Projects)</option>
+      </select>
+
+      <button type="submit" class="btn">Submit Request</button>
+    </form>
+
+    <div class="footer">
+      ?? For help, contact: <strong>9711269069</strong> | Instagram: @artanddesignfusion  
+      <br>Owned by: <strong>Chaudhary Pranveer Singh</strong>
+    </div>
+  </div>
+</body>
+</html>
